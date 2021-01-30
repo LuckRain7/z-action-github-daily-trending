@@ -3,106 +3,78 @@
  *  Author: LuckRain7
  *  Date: 2020-04-26 22:07:19
  */
-const superagent = require("superagent");
-const cheerio = require("cheerio");
-const fs = require("fs");
-const path = require("path");
-const dayjs = require("dayjs");
 
-const TIME = dayjs().format("YYYY-MM-DD");
-const URL = "https://github.com/trending/typescript?since=daily";
+const fs = require("fs"),
+  path = require("path"),
+  puppeteer = require("puppeteer"),
+  dayjs = require("dayjs")
 
-let MarkDownFile = `# [GitHub] TypeScript 日趋势榜项目(${TIME})`;
+const TIME = dayjs().format("YYYY-MM-DD"),
+  URL = "https://github.com/trending/typescript?since=daily"
 
-superagent.get(URL).then((res) => {
-  // 获取数据并进行 DOM 操作
-  let $ = cheerio.load(res.text);
+let MarkDownFile = `# [GitHub] TypeScript 日趋势榜项目(${TIME})\n\n`
 
-  const BoxRowArray = $(".Box-row");
-  console.log("项目数量:", BoxRowArray.length);
-  console.log("############################");
+;(async () => {
+  const browser = await puppeteer.launch({
+    // headless: false, // 有浏览器界面启动
+    // slowMo: 50, // 将 Puppeteer 操作减少指定的毫秒数。
+    // devtools: false, // 是否为每个选项卡自动打开DevTools面板
+  })
 
-  // 获取数据
-  BoxRowArray.each((index, item) => {
-    const $BoxRow = cheerio.load(item);
+  const page = await browser.newPage()
+  await page.goto(URL)
 
-    console.log(`第${index + 1}个项目`);
+  // 项目标题
+  let TitleArr = await page.$$eval("h1.h3.lh-condensed", (el) =>
+    el.map((el) => el.innerText.replace(/ /g, ""))
+  )
 
-    // ------- 项目标题 & 链接-------
-    const title = $BoxRow("h1.lh-condensed").find("a")[0].attribs.href.slice(1);
-    console.log("链接地址：", `https://github.com/${title}`);
-    console.log("项目标题:", title);
+  // 项目简介
+  let IntroduceArr = await page.$$eval("p.text-gray", (el) =>
+    el.map((el) => el.innerText)
+  )
 
-    // ------- 项目概述 -------
-    let description = "";
-    const $description = $BoxRow("P.text-gray");
+  let StartArr = [] // 项目星星
+  let ForkArr = [] // 项目 fork
+  let TodayStartArr = [] // 项目 today start
 
-    // 解决无简介问题
-    if ($description.length !== 0) {
-      // 去除 emoji 的影响
-      $description[0].children.forEach((item, index) => {
-        if (item.type === "text") {
-          description += item.data.trim();
-        }
-      });
-    } else {
-      // 无简介
-      description += "";
-    }
+  // 其余信息集合
+  let OtherInformation = await page.$$eval("div.text-gray", (el) =>
+    el.map((el) => el.innerText)
+  )
 
-    console.log("项目概述：", description);
+  OtherInformation.map((item) => {
+    const _item = item.split(" ")
+    console.log(_item)
+    StartArr.push(_item[3])
+    ForkArr.push(_item[5])
+    TodayStartArr.push(_item[_item.length - 3])
+  })
 
-    // ------- 项目星星 -------f6 text-gray mt-2
+  for (let i = 0; i < TitleArr.length; i++) {
+    const title = TitleArr[i]
 
-    const divForNumber = $BoxRow("div.f6.text-gray.mt-2");
+    MarkDownFile += `## ${i + 1}. ${title} \n\n`
+    MarkDownFile += `项目地址：[https://github.com/${title}](https://github.com/${title})\n\n`
+    MarkDownFile += `stars:${StartArr[i]} | forks:${ForkArr[i]} | ${TodayStartArr[i]} stars today \n\n`
+    MarkDownFile += `${IntroduceArr[i]}\n\n`
+  }
 
-    const stars = divForNumber
-      .find("a.muted-link.d-inline-block.mr-3")[0]
-      .children[2].data.toString()
-      .trim();
-    console.log("⭐：", parseInt(stars));
+  console.log(MarkDownFile)
 
-    // ------- 项目fork -------
-    const forks = divForNumber
-      .find("a.muted-link.d-inline-block.mr-3")[1]
-      .children[2].data.toString()
-      .trim();
-    console.log("forks数量：", parseInt(forks));
-
-    // ------- 本周赞数 -------
-    const weekStars = divForNumber
-      .find("span.d-inline-block.float-sm-right")[0]
-      .children[2].data.toString()
-      .trim();
-    console.log("本周赞数：", parseInt(weekStars));
-
-    console.log("======================");
-    console.log("");
-
-    // 拼接输出
-    MarkDownFile += `
-## ${index + 1}.  ${title}
-
-项目地址：[https://github.com/${title}](https://github.com/${title})
-
-stars:${stars} | forks:${forks} | ${weekStars} 
-
-${description}
-`;
-  }); // each END
-
-  // 获取当前时间作为
-
-  // console.log(MarkDownFile)
-
-  // 写入文件
+  // 文件写入
   fs.writeFile(
-    path.resolve(__dirname, `../github-typescript-daily/${TIME}.md`),
+    path.resolve(__dirname, `../daily-javascript/${TIME}.md`),
     MarkDownFile,
     (err) => {
       if (!err) {
-        console.log("文件写入完成");
+        console.log("文件写入完成")
       }
     }
-  );
-});
+  )
+
+  await browser.close()
+})().catch((error) => {
+  console.log(" ------ [error] ------ ")
+  console.log(error)
+})
