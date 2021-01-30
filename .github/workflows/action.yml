@@ -1,0 +1,46 @@
+# name字段是配置文件的描述
+name: "GitHub Weekly Trending Bot"
+
+# on字段是触发条件
+on:
+  schedule:
+    - cron: 48 12 * * MON # https://crontab.guru/examples.html  每个星期一的 20点48分 执行
+  # 在推送到master分支时会自动运行一次
+  # push:
+  #   branches:
+  #     - dev
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest # 运行环境指定为最新版的 Ubuntu
+    # 步骤
+    steps:
+      # 第一步 从代码仓库获取代码
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      # 第二步 配置安装 Node 环境
+      - name: use Node.js 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run js
+          npm run ts
+
+      # 第四步 提交
+      - name: commit
+        run: |
+          git config --global user.email 763839938@qq.com
+          git config --global user.name LuckRain7
+          git add .
+          git commit -m "bot update"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+          branch: main
