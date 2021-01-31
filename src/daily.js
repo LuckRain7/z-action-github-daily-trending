@@ -1,7 +1,7 @@
 /*
  * @Author       : 震雨 LuckRain7
  * @Date         : 2021-01-31 10:31:10
- * @LastEditTime : 2021-01-31 10:55:44
+ * @LastEditTime : 2021-01-31 11:10:40
  * @Description  : daily
  * @   Love and Peace
  */
@@ -54,7 +54,7 @@ const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
 
     OtherInformation.map((item) => {
       const _item = item.split(" ")
-      console.log(_item)
+      // console.log(_item)
       StartArr.push(_item[3])
       ForkArr.push(_item[5])
       TodayStartArr.push(_item[_item.length - 3])
@@ -66,23 +66,25 @@ const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
       MarkDownFile += `## ${i + 1}. ${title} \n\n`
       MarkDownFile += `项目地址：[https://github.com/${title}](https://github.com/${title})\n\n`
       MarkDownFile += `stars:${StartArr[i]} | forks:${ForkArr[i]} | ${TodayStartArr[i]} stars today \n\n`
-      MarkDownFile += `${IntroduceArr[i]}\n\n`
+      MarkDownFile += `${IntroduceArr[i] || ""}\n\n`
     }
 
-    console.log(MarkDownFile)
+    // console.log(MarkDownFile)
 
     // 存放目录
     const FILEPATH = FilePath(type)
 
     // 判断文件夹是否存在
-    if (!fs.statSync(FILEPATH)) {
+    try {
+      fs.statSync(FILEPATH)
+    } catch (err) {
       fs.mkdirSync(FILEPATH)
     }
 
     // 文件写入
     fs.writeFile(FILEPATH + `/${type}-${TIME}.md`, MarkDownFile, (err) => {
       if (!err) {
-        console.log("文件写入完成")
+        console.log("[INFO SUCCESS] " + type + " 文件写入完成 ")
       }
     })
   }
