@@ -1,7 +1,7 @@
 /*
  * @Author       : 震雨 LuckRain7
  * @Date         : 2021-01-31 10:31:10
- * @LastEditTime : 2021-01-31 10:52:16
+ * @LastEditTime : 2021-01-31 10:55:44
  * @Description  : daily
  * @   Love and Peace
  */
@@ -21,7 +21,7 @@ const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
 ;(async () => {
   // 开启浏览器
   const browser = await puppeteer.launch({
-    headless: false, // 有浏览器界面启动
+    // headless: false, // 有浏览器界面启动
     slowMo: 50, // 将 Puppeteer 操作减少指定的毫秒数。
     // devtools: false, // 是否为每个选项卡自动打开DevTools面板
   })
