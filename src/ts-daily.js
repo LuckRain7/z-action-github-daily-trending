@@ -64,7 +64,7 @@ let MarkDownFile = `# [GitHub] TypeScript 日趋势榜项目(${TIME})\n\n`
 
   // 文件写入
   fs.writeFile(
-    path.resolve(__dirname, `../daily-typescript/${TIME}.md`),
+    path.resolve(__dirname, `../daily-typescript/typescript-${TIME}.md`),
     MarkDownFile,
     (err) => {
       if (!err) {
