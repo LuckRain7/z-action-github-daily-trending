@@ -28,8 +28,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run js
-          npm run ts
+          npm run daily
 
       # 第四步 提交
       - name: commit

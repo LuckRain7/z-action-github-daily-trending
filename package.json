@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "daily": "node src/daily.js",
     "js": "node src/js-daily.js",
     "ts": "node src/ts-daily.js"
   },
