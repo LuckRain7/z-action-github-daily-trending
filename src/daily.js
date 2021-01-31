@@ -1,7 +1,7 @@
 /*
  * @Author       : 震雨 LuckRain7
  * @Date         : 2021-01-31 10:31:10
- * @LastEditTime : 2021-01-31 11:13:35
+ * @LastEditTime : 2021-01-31 11:15:07
  * @Description  : daily
  * @   Love and Peace
  */
@@ -16,7 +16,7 @@ const URL = (type) => `https://github.com/trending/${type}?since=daily`
 const MarkDownFileTitle = (type) =>
   `# [GitHub] ${type} 日趋势榜项目(${TIME})\n\n`
 
-const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
+const FilePath = (type) => path.resolve(__dirname, `../DATA/daily-${type}`)
 
 ;(async () => {
   // 开启浏览器
