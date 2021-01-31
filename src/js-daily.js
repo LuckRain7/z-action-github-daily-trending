@@ -17,7 +17,7 @@ let MarkDownFile = `# [GitHub] JavaScript 日趋势榜项目(${TIME})\n\n`
 ;(async () => {
   const browser = await puppeteer.launch({
     // headless: false, // 有浏览器界面启动
-    // slowMo: 50, // 将 Puppeteer 操作减少指定的毫秒数。
+    slowMo: 50, // 将 Puppeteer 操作减少指定的毫秒数。
     // devtools: false, // 是否为每个选项卡自动打开DevTools面板
   })
 
