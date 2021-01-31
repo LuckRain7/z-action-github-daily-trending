@@ -1,7 +1,7 @@
 /*
  * @Author       : 震雨 LuckRain7
  * @Date         : 2021-01-31 10:31:10
- * @LastEditTime : 2021-01-31 11:10:40
+ * @LastEditTime : 2021-01-31 11:13:35
  * @Description  : daily
  * @   Love and Peace
  */
@@ -54,7 +54,7 @@ const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
 
     OtherInformation.map((item) => {
       const _item = item.split(" ")
-      // console.log(_item)
+
       StartArr.push(_item[3])
       ForkArr.push(_item[5])
       TodayStartArr.push(_item[_item.length - 3])
@@ -68,8 +68,6 @@ const FilePath = (type) => path.resolve(__dirname, `../daily-${type}`)
       MarkDownFile += `stars:${StartArr[i]} | forks:${ForkArr[i]} | ${TodayStartArr[i]} stars today \n\n`
       MarkDownFile += `${IntroduceArr[i] || ""}\n\n`
     }
-
-    // console.log(MarkDownFile)
 
     // 存放目录
     const FILEPATH = FilePath(type)
