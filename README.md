@@ -6,8 +6,8 @@
 
 [TypeScript](https://github.com/LuckRain7/z-action-github-daily-trending/tree/main/DATA/daily-typescript)
 
-CSS
+[CSS](https://github.com/LuckRain7/z-action-github-daily-trending/tree/main/DATA/daily-CSS)
 
-HTML
+[HTML](https://github.com/LuckRain7/z-action-github-daily-trending/tree/main/DATA/daily-HTML)
 
-Vue
+[Vue](https://github.com/LuckRain7/z-action-github-daily-trending/tree/main/DATA/daily-Vue)
