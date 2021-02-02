@@ -2,6 +2,8 @@
   <img src="https://raw.githubusercontent.com/LuckRain7/z-action-github-daily-trending/main/Header.png" width="400"/>
 </div>
 
+<div style="height:15px;"></div>
+
 > 每天的 23:15 触发，读取 GitHub 今日趋势榜
 
 [JavaScript](https://github.com/LuckRain7/z-action-github-daily-trending/tree/main/DATA/daily-javascript)
