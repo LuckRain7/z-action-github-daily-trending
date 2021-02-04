@@ -11,7 +11,7 @@ const fs = require("fs"),
   dayjs = require("dayjs")
 
 const TYPE_ARR = ["JavaScript", "TypeScript", "CSS", "HTML", "Vue"]
-const TIME = dayjs().format("YYYY-MM-DD")
+const TIME = dayjs().subtract(1, 'day').format("YYYY-MM-DD")
 const URL = (type) => `https://github.com/trending/${type}?since=daily`
 const MarkDownFileTitle = (type) =>
   `# [GitHub] ${type} 日趋势榜项目(${TIME})\n\n`
