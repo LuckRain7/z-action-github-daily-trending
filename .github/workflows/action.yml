@@ -4,7 +4,7 @@ name: "GitHub Weekly Trending Bot"
 # on字段是触发条件
 on:
   schedule:
-    - cron: 15 16 * * * # https://crontab.guru/examples.html  每天 11点15 执行
+    - cron: 15 23 * * * # https://crontab.guru/examples.html  每天 11点15 执行
   # 在推送到master分支时会自动运行一次
   # push:
   #   branches:
