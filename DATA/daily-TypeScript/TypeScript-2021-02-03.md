@@ -1,202 +1,202 @@
 # [GitHub] TypeScript 日趋势榜项目(2021-02-03)
 
-## 1. microsoft/fluentui 
-
-项目地址：[https://github.com/microsoft/fluentui](https://github.com/microsoft/fluentui)
-
-stars:10,623 | forks:1,828 | 27 stars today 
-
-See what the GitHub community is most excited about today.
-
-## 2. ianstormtaylor/slate 
-
-项目地址：[https://github.com/ianstormtaylor/slate](https://github.com/ianstormtaylor/slate)
-
-stars:19,662 | forks:2,148 | 18 stars today 
-
-Fluent UI web represents a collection of utilities, React components, and web components for building web applications.
-
-## 3. nrwl/nx 
-
-项目地址：[https://github.com/nrwl/nx](https://github.com/nrwl/nx)
-
-stars:5,896 | forks:647 | 19 stars today 
-
-A completely customizable framework for building rich text editors. (Currently in beta.)
-
-## 4. vendure-ecommerce/vendure 
-
-项目地址：[https://github.com/vendure-ecommerce/vendure](https://github.com/vendure-ecommerce/vendure)
-
-stars:1,809 | forks:275 | 8 stars today 
-
-Extensible Dev Tools for Monorepos
-
-## 5. aws/aws-cdk 
-
-项目地址：[https://github.com/aws/aws-cdk](https://github.com/aws/aws-cdk)
-
-stars:6,165 | forks:1,421 | 11 stars today 
-
-A headless GraphQL ecommerce framework for the modern web
-
-## 6. eamodio/vscode-gitlens 
-
-项目地址：[https://github.com/eamodio/vscode-gitlens](https://github.com/eamodio/vscode-gitlens)
-
-stars:5,511 | forks:425 | 11 stars today 
-
-The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code
-
-## 7. angular/angular-cli 
-
-项目地址：[https://github.com/angular/angular-cli](https://github.com/angular/angular-cli)
-
-stars:24,141 | forks:10,334 | 4 stars today 
-
-Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
-
-## 8. microsoft/TypeScript 
-
-项目地址：[https://github.com/microsoft/TypeScript](https://github.com/microsoft/TypeScript)
-
-stars:68,280 | forks:9,067 | 40 stars today 
-
-CLI tool for Angular
-
-## 9. LekoArts/gatsby-themes 
-
-项目地址：[https://github.com/LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes)
-
-stars:1,146 | forks:353 | 10 stars today 
-
-TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
-
-## 10. SigNoz/signoz 
-
-项目地址：[https://github.com/SigNoz/signoz](https://github.com/SigNoz/signoz)
-
-stars:185 | forks:12 | 42 stars today 
-
-Get high-quality and customizable Gatsby themes to quickly bootstrap your website! Choose from many professionally created and impressive designs with a wide variety of features and customization options.
-
-## 11. DefinitelyTyped/DefinitelyTyped 
+## 1. DefinitelyTyped/DefinitelyTyped 
 
 项目地址：[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
 
-stars:32,079 | forks:23,830 | 25 stars today 
+stars:32,116 | forks:23,852 | 25 stars today 
 
-Open source Observability Platform.  SigNoz helps developers find issues in their deployed applications & solve them quickly
+See what the GitHub community is most excited about today.
 
-## 12. opstrace/opstrace 
+## 2. backstage/backstage 
 
-项目地址：[https://github.com/opstrace/opstrace](https://github.com/opstrace/opstrace)
+项目地址：[https://github.com/backstage/backstage](https://github.com/backstage/backstage)
 
-stars:625 | forks:12 | 79 stars today 
+stars:9,515 | forks:873 | 20 stars today 
 
 The repository for high quality TypeScript type definitions.
 
-## 13. prisma/prisma 
+## 3. supabase/supabase 
 
-项目地址：[https://github.com/prisma/prisma](https://github.com/prisma/prisma)
+项目地址：[https://github.com/supabase/supabase](https://github.com/supabase/supabase)
 
-stars:7,869 | forks:350 | 32 stars today 
+stars:5,457 | forks:205 | 57 stars today 
 
-Secure observability, deployed in your own network. An open source alternative to SaaS solutions like datadog, signalfx...
+Backstage is an open platform for building developer portals
 
-## 14. vuejs/vue-next 
+## 4. elastic/kibana 
 
-项目地址：[https://github.com/vuejs/vue-next](https://github.com/vuejs/vue-next)
+项目地址：[https://github.com/elastic/kibana](https://github.com/elastic/kibana)
 
-stars:20,457 | forks:3,402 | 32 stars today 
+stars:15,535 | forks:6,303 | 11 stars today 
 
-Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server & SQLite
+The open source Firebase alternative. Follow to stay updated about our public Beta.
 
-## 15. fullcalendar/fullcalendar 
+## 5. niklasvh/html2canvas 
 
-项目地址：[https://github.com/fullcalendar/fullcalendar](https://github.com/fullcalendar/fullcalendar)
+项目地址：[https://github.com/niklasvh/html2canvas](https://github.com/niklasvh/html2canvas)
 
-stars:13,486 | forks:3,129 | 4 stars today 
+stars:22,682 | forks:3,864 | 16 stars today 
 
- Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+Your window into the Elastic Stack
 
-## 16. vuetifyjs/vuetify 
+## 6. microsoft/vscode 
+
+项目地址：[https://github.com/microsoft/vscode](https://github.com/microsoft/vscode)
+
+stars:110,273 | forks:17,891 | 64 stars today 
+
+Screenshots with JavaScript
+
+## 7. facebook/docusaurus 
+
+项目地址：[https://github.com/facebook/docusaurus](https://github.com/facebook/docusaurus)
+
+stars:21,550 | forks:2,586 | 15 stars today 
+
+Visual Studio Code
+
+## 8. storybookjs/storybook 
+
+项目地址：[https://github.com/storybookjs/storybook](https://github.com/storybookjs/storybook)
+
+stars:58,274 | forks:5,797 | 36 stars today 
+
+Easy to maintain open source documentation websites.
+
+## 9. vuetifyjs/vuetify 
 
 项目地址：[https://github.com/vuetifyjs/vuetify](https://github.com/vuetifyjs/vuetify)
 
-stars:29,418 | forks:5,345 | 20 stars today 
+stars:29,437 | forks:5,352 | 19 stars today 
 
-Full-sized drag & drop event calendar
+ The UI component explorer. Develop, document, & test React, Vue, Angular, Web Components, Ember, Svelte & more!
 
-## 17. ant-design/ant-design 
-
-项目地址：[https://github.com/ant-design/ant-design](https://github.com/ant-design/ant-design)
-
-stars:66,619 | forks:26,421 | 39 stars today 
-
- Material Component Framework for Vue
-
-## 18. Azure/azure-rest-api-specs 
-
-项目地址：[https://github.com/Azure/azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs)
-
-stars:933 | forks:2,604 | 0 stars today 
-
- A UI Design Language and React UI library
-
-## 19. bytedance/IconPark 
-
-项目地址：[https://github.com/bytedance/IconPark](https://github.com/bytedance/IconPark)
-
-stars:3,125 | forks:139 | 35 stars today 
-
-The source for REST API specifications for Microsoft Azure.
-
-## 20. jef/streetmerchant 
+## 10. jef/streetmerchant 
 
 项目地址：[https://github.com/jef/streetmerchant](https://github.com/jef/streetmerchant)
 
-stars:3,133 | forks:882 | 13 stars today 
+stars:3,152 | forks:889 | 18 stars today 
 
-Transform an SVG icon into multiple themes, and generate React icons，Vue icons，svg icons
+ Material Component Framework for Vue
 
-## 21. wbkd/react-flow 
+## 11. nrwl/nx 
 
-项目地址：[https://github.com/wbkd/react-flow](https://github.com/wbkd/react-flow)
+项目地址：[https://github.com/nrwl/nx](https://github.com/nrwl/nx)
 
-stars:2,349 | forks:143 | 11 stars today 
+stars:5,907 | forks:649 | 16 stars today 
 
  The world's easiest, most powerful stock checker
 
-## 22. Azure/autorest 
+## 12. angular/angular 
 
-项目地址：[https://github.com/Azure/autorest](https://github.com/Azure/autorest)
+项目地址：[https://github.com/angular/angular](https://github.com/angular/angular)
 
-stars:3,239 | forks:607 | 4 stars today 
+stars:70,442 | forks:18,496 | 41 stars today 
 
-Highly customizable library for building interactive node-based UIs, editors, flow charts and diagrams
+Extensible Dev Tools for Monorepos
 
-## 23. davidkpiano/xstate 
+## 13. pmndrs/jotai 
 
-项目地址：[https://github.com/davidkpiano/xstate](https://github.com/davidkpiano/xstate)
+项目地址：[https://github.com/pmndrs/jotai](https://github.com/pmndrs/jotai)
 
-stars:14,656 | forks:634 | 26 stars today 
+stars:2,799 | forks:61 | 10 stars today 
 
-OpenAPI (f.k.a Swagger) Specification code generator. Supports C#, PowerShell, Go, Java, Node.js, TypeScript, Python, Ruby
+One framework. Mobile & desktop.
 
-## 24. microsoft/azure-pipelines-tasks 
+## 14. chakra-ui/chakra-ui 
 
-项目地址：[https://github.com/microsoft/azure-pipelines-tasks](https://github.com/microsoft/azure-pipelines-tasks)
+项目地址：[https://github.com/chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui)
 
-stars:2,368 | forks:1,840 | 3 stars today 
+stars:15,017 | forks:1,147 | 41 stars today 
 
-State machines and statecharts for the modern web.
+ Primitive, flexible state management for React
 
-## 25. adobe/react-spectrum 
+## 15. angular/angular-cli 
 
-项目地址：[https://github.com/adobe/react-spectrum](https://github.com/adobe/react-spectrum)
+项目地址：[https://github.com/angular/angular-cli](https://github.com/angular/angular-cli)
 
-stars:4,225 | forks:245 | 8 stars today 
+stars:24,145 | forks:10,341 | 4 stars today 
 
-Tasks for Azure Pipelines
+ Simple, Modular & Accessible UI Components for your React Applications
+
+## 16. tensorflow/tfjs-models 
+
+项目地址：[https://github.com/tensorflow/tfjs-models](https://github.com/tensorflow/tfjs-models)
+
+stars:8,298 | forks:2,539 | 6 stars today 
+
+CLI tool for Angular
+
+## 17. openvinotoolkit/cvat 
+
+项目地址：[https://github.com/openvinotoolkit/cvat](https://github.com/openvinotoolkit/cvat)
+
+stars:4,874 | forks:1,307 | 4 stars today 
+
+Pretrained models for TensorFlow.js
+
+## 18. ianstormtaylor/slate 
+
+项目地址：[https://github.com/ianstormtaylor/slate](https://github.com/ianstormtaylor/slate)
+
+stars:19,764 | forks:2,152 | 93 stars today 
+
+Powerful and efficient Computer Vision Annotation Tool (CVAT)
+
+## 19. rocketseat-education/bootcamp-gostack-modulos 
+
+项目地址：[https://github.com/rocketseat-education/bootcamp-gostack-modulos](https://github.com/rocketseat-education/bootcamp-gostack-modulos)
+
+stars:49 | forks:91 | 0 stars today 
+
+A completely customizable framework for building rich text editors. (Currently in beta.)
+
+## 20. eclipse-theia/theia 
+
+项目地址：[https://github.com/eclipse-theia/theia](https://github.com/eclipse-theia/theia)
+
+stars:13,932 | forks:1,651 | 10 stars today 
+
+Repositório contendo todos os códigos feitos nas aulas do Bootcamp GoStack
+
+## 21. actions/cache 
+
+项目地址：[https://github.com/actions/cache](https://github.com/actions/cache)
+
+stars:1,681 | forks:363 | 7 stars today 
+
+Eclipse Theia is a cloud & desktop IDE framework implemented in TypeScript.
+
+## 22. sindresorhus/got 
+
+项目地址：[https://github.com/sindresorhus/got](https://github.com/sindresorhus/got)
+
+stars:8,939 | forks:525 | 6 stars today 
+
+Cache dependencies and build outputs in GitHub Actions
+
+## 23. SigNoz/signoz 
+
+项目地址：[https://github.com/SigNoz/signoz](https://github.com/SigNoz/signoz)
+
+stars:212 | forks:14 | 21 stars today 
+
+ Human-friendly and powerful HTTP request library for Node.js
+
+## 24. vercel/swr 
+
+项目地址：[https://github.com/vercel/swr](https://github.com/vercel/swr)
+
+stars:15,502 | forks:523 | 22 stars today 
+
+Open source Observability Platform.  SigNoz helps developers find issues in their deployed applications & solve them quickly
+
+## 25. Azure/azure-rest-api-specs 
+
+项目地址：[https://github.com/Azure/azure-rest-api-specs](https://github.com/Azure/azure-rest-api-specs)
+
+stars:935 | forks:2,615 | 2 stars today 
+
+React Hooks library for remote data fetching
 
