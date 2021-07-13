@@ -1,7 +1,7 @@
 /*
  * @Author       : 震雨 LuckRain7
  * @Date         : 2021-01-31 10:31:10
- * @LastEditTime : 2021-01-31 11:15:07
+ * @LastEditTime : 2021-07-13 11:26:04
  * @Description  : daily
  * @   Love and Peace
  */
@@ -39,7 +39,7 @@ const FilePath = (type) => path.resolve(__dirname, `../DATA/daily-${type}`)
     )
 
     // 项目简介
-    let IntroduceArr = await page.$$eval("p.text-gray", (el) =>
+    let IntroduceArr = await page.$$eval("p.color-text-secondary", (el) =>
       el.map((el) => el.innerText)
     )
 
@@ -48,7 +48,7 @@ const FilePath = (type) => path.resolve(__dirname, `../DATA/daily-${type}`)
     let TodayStartArr = [] // 项目 today start
 
     // 其余信息集合
-    let OtherInformation = await page.$$eval("div.text-gray", (el) =>
+    let OtherInformation = await page.$$eval("div.color-text-secondary", (el) =>
       el.map((el) => el.innerText)
     )
 
