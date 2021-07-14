@@ -53,10 +53,11 @@ const FilePath = (type) => path.resolve(__dirname, `../DATA/daily-${type}`)
     )
 
     OtherInformation.map((item) => {
-      const _item = item.split(" ")
+      let _item = item.split(" ")
+      _item = _item.filter((e) => e.length > 0)
 
-      StartArr.push(_item[3])
-      ForkArr.push(_item[5])
+      StartArr.push(_item[1])
+      ForkArr.push(_item[2])
       TodayStartArr.push(_item[_item.length - 3])
     })
 
